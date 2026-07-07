@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tracker — Page 1</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 48px 40px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #f8fafc;
+  }
+  p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+  a.btn {
+    display: inline-block;
+    background: #334155;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 10px;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+  a.btn:hover {
+    background: #475569;
+    transform: translateY(-2px);
+  }
+  .footer-note {
+    margin-top: 24px;
+    font-size: 0.75rem;
+    color: #475569;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>📄 Page 1</h1>
+    <p>You're on Page 1. Stay a bit — your time here is being tracked too, and will show up in the admin dashboard's "avg time on page" and "live now" stats.</p>
+    <a class="btn" href="index.html">← Back to Home</a>
+    <div class="footer-note">Session data → Firestore · view stats in admin.html</div>
+  </div>
+
+  <script type="module" src="tracker.js"></script>
+</body>
+</html>
